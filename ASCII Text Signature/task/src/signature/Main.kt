@@ -4,7 +4,6 @@ import java.io.File
 import java.util.*
 
 fun main() {
-    val fileReader = Scanner(File("C:/fonts/roman.txt"))
     val scanner = Scanner(System.`in`)
     print("Enter name and surname: ")
     val name = scanner.next().toUpperCase()
@@ -63,6 +62,7 @@ fun main() {
 }
 
 fun makeMap(): MutableMap<Char, Letter> {
+    val fileReader = Scanner(File("C:/fonts/roman.txt"))
     val face = """
         ____ ___  ____ ___  ____ ____ ____ _  _ _  _ _  _ _    _  _ _  _ ____ ___  ____ ____ ____ ___ _  _ _  _ _ _ _ _  _ _   _ ___ 
         |__| |__] |    |  \ |___ |___ | __ |__| |  | |_/  |    |\/| |\ | |  | |__] |  | |__/ [__   |  |  | |  | | | |  \/   \_/    / 
